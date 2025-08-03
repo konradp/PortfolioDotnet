@@ -1,0 +1,102 @@
+[
+  {
+    "Name": "Builders of Greece",
+    "Description": "Builders of Greece is a city-building strategy game set in ancient Greece. As a gameplay programmer, I contributed to core gameplay systems using the Zenject framework and designed advanced AI behaviors leveraging an ECS (Entity Component System) architecture. I focused on optimizing game performance with Memory Profiler, ensuring smooth gameplay experiences. My responsibilities included creating cinematic in-game cutscenes with Unity Timeline and Cinemachine, as well as integrating immersive audio - including SFX and narration - through Wwise. Additionally, I was actively involved in debugging and enhancing the game’s stability by analyzing crash logs and resolving critical issues. ",
+    "ImageUrl": "/images/bogtitle.png",
+    "TechStack": ["C#", "Unity", "ECS", "Memory Profiler", "Unity Timeline", "Cinemachine", "Rider", "Visual Studio", "Wwise"],
+    "Links": [
+      { "Label": "Store Link", "Url": "https://store.steampowered.com/app/1273100/Builders_of_Greece/" }
+    ]
+  },
+  {
+    "Name": "Builders of Greece PO",
+    "Description": "As Product Owner from September 2023 to October 2024, I led the Builders of Greece project through its Early Access launch and ongoing updates. I managed and empowered a cross-functional team using SCRUM and Agile methodologies, defining and prioritizing the development roadmap based on player feedback and market trends. My responsibilities included creating clear milestones, coordinating tasks through Jira and Miro, and ensuring effective communication across the team. I oversaw the game's Steamworks site, managed build preparation and branching, and made strategic adjustments to meet the needs of our target audience. Through structured planning and hands-on leadership, I contributed to a successful Early Access release and set the foundation for continued growth and player engagement.",
+    "ImageUrl": "/images/bogtitle.png",
+    "TechStack": ["SCRUM", "Agile", "Roadmap planning", "Jira", "Miro", "Steamworks"],
+    "Links": [
+      { "Label": "Store Link", "Url": "https://store.steampowered.com/app/1273100/Builders_of_Greece/" }
+    ]
+  },  
+  {
+    "Name": "Gimle",
+    "Description": "At the early stage of development for Gimle, I focused on rapid prototyping and implementing core game mechanics, laying the groundwork for future gameplay systems. I also contributed to the creation of the project’s trailer, collaborating with the team to highlight its unique features and atmosphere. Although the project is currently on hold, my involvement provided valuable experience in early-phase development, creative iteration, and cross-disciplinary teamwork.",
+    "ImageUrl": "/images/gimLogo.png",
+    "TechStack": ["C#", "Unity", "Unity Timeline"],
+    "Links": [
+      { "Label": "Store Link", "Url": "https://store.steampowered.com/app/1765920/Gimle_The_Broken_Prophecy/" }
+    ]
+  },
+  {
+    "Name": "TankX",
+    "Description": "TankX is a twin-stick shooter designed for dynamic local multiplayer battles or solo play against AI-controlled bots. As the sole developer, I led the project from concept to Xbox One release, handling all game design, programming, and the majority of the 2D/3D asset creation. I implemented engaging gameplay mechanics focused on balance and replayability, developed responsive NPC AI using waypoint systems, and designed intuitive UI/UX tailored for multiplayer experiences. I managed input handling for multiple controllers, ensuring seamless gameplay for all participants. My responsibilities also included post-launch bug fixing, meeting platform-specific requirements for Xbox certification, and end-to-end deployment via the Xbox One Creators Program. This project showcases my ability to manage the complete game development lifecycle, from prototyping and asset creation to platform certification and live support.",
+    "ImageUrl": "/images/tankXLogo.png",
+    "TechStack": ["C#", "Unity", "Blender", "GIMP", "Xbox One Creators Program SDK", "Visual Studio"],
+    "Links": [
+      { "Label": "Store Link", "Url": "https://www.xbox.com/pl-PL/games/store/tankx/9nfs5f1t60zp" }
+    ],
+    "YouTubeUrl": "https://www.youtube.com/embed/El8Ot9ShPKY"
+  },
+  {
+    "Name": "Pirates Keel",
+    "Description": "Pirate’s Keel is an open-source, arcade-inspired sailing game where player command pirate ships in naval battles. Developed to encourage community learning and collaboration, I architected the game’s codebase to be modular and accessible. A standout feature is the custom boat movement system: ships use vehicle-style physics with Unity’s WheelColliders, carefully tuned torque, and dynamic center-of-mass adjustments. This approach delivers responsive controls and convincingly buoyant movement, striking a balance between arcade fun and realistic ship handling. As the sole developer, I also managed the release of the public GitHub repository, providing modular code to encourage open collaboration. Through Pirate’s Keel, I aimed to lower the barrier for new developers to engage with game development and contribute to a polished, playable project.",
+    "ImageUrl": "/images/pirLogo.png",
+    "TechStack": ["C#", "Unity", "Blender", "GIMP", "Vehicle Physics", "Visual Studio"],
+    "Links": [
+      { "Label": "Store Link", "Url": "https://checkenginestudios.itch.io/pirates-keel" },
+      { "Label": "Repository", "Url":"https://github.com/konradp/PiratesPublic"}
+    ],
+    "ExtraImageUrl": "/images/pk1.png"
+  },
+  {
+    "Name": "Bad Karts",
+    "Description": "Bad Karts is a simple, physics-driven kart racing game developed in a limited timeframe for Low Effort Jam 9. I handled all aspects of development, from vehicle controls to gameplay tuning, focusing on delivering a fun, playable prototype under strict time constraints. The project demonstrates my ability to rapidly prototype and complete a game, even within challenging deadlines.",
+    "ImageUrl": "/images/kartsLogo.png",
+    "TechStack": ["C#", "Unity", "Vehicle Physics", "Visual Studio"],
+    "Links": [
+      { "Label": "Store Link", "Url": "https://checkenginestudios.itch.io/bad-karts" }
+    ]
+  },
+  {
+    "Name": "Kulkens",
+    "Description": "Kulkens is an open-source prototype game created to experiment with the Extenject (Zenject) dependency injection framework in Unity. The project focuses on modular game architecture, leveraging dependency injection to enable flexible component management and easier scalability for future features. As the sole developer, I implemented core gameplay systems, structured scene composition, and designed the codebase to serve as a learning resource for others interested in best practices for dependency injection in Unity projects.",
+    "ImageUrl": "/images/kulkLogo.png",
+    "TechStack": ["C#", "Unity", "Zenject", "Extenject", "Visual Studio"],
+    "Links": [
+      { "Label": "Repository", "Url": "https://github.com/konradp/Kulkens-public" }
+    ]
+  },
+  {
+    "Name": "Digging Game Prototype",
+    "Description": "This prototype explores core mechanics for a digging game, focusing on real-time terrain deformation, player movement, and interactive digging logic-all implemented directly in C# code without custom shaders. The project demonstrates experimental gameplay systems and procedural terrain modification, providing a solid foundation for further development or experimentation with destructible environments in Unity.",
+    "ImageUrl": "/images/digging.png",
+    "TechStack": ["C#", "Unity", "Rider"],
+    "Links": [
+      { "Label": "Repository", "Url": "https://github.com/konradp/DiggingGamePrototype" }
+    ]
+  },
+  {
+    "Name": "Rally Project",
+    "Description": "RallyProject is an ambitious rally racing game prototype focused on advanced vehicle physics and extensive customization options. The project features a heavily modified third-party vehicle physics plugin, tailored to deliver nuanced, realistic handling suited to rally environments. FMOD is integrated for dynamic soundtrack and audio effects, enhancing immersion and audio flexibility. While development is currently on hold due to the scope of level design and visual asset creation, the codebase showcases expertise in physics customization, Unity integration, and technical groundwork for a full-featured rally experience.",
+    "ImageUrl": "/images/rally.png",
+    "TechStack": ["C#", "Unity", "Vehicle Physics", "Rider", "Fmod"],
+    "YouTubeUrl": "https://www.youtube.com/embed/fDpBsq2C-Ws"
+  },
+  {
+    "Name": "WeatherGetter Service",
+    "Description": "This project is a full-stack ASP.NET Core web application that integrates with external weather APIs and a SQL Server database. It allows users to search for cities, fetch current weather data, and store both location and weather information. The backend uses Entity Framework Core for data access and implements RESTful endpoints for adding, retrieving, and deleting city and weather records. A background hosted service automatically updates weather data for all tracked locations at regular intervals, ensuring the database stays current. The application is designed for deployment on a local network, with proper Kestrel and firewall configuration for remote access. Security best practices are followed by using environment variables for sensitive data. The API is easily consumable by frontend apps or command-line tools, making it a robust and scalable solution for weather data management.",
+    "ImageUrl": "/images/weatherService.png",
+    "TechStack": ["C#", "ASP.NET Core (Web API)", "Entity Framework Core (ORM)", "SQL Server (Database)", "RESTful API endpoints"],
+    "Links": [
+      { "Label": "Repository", "Url": "https://github.com/konradp/TODO" }
+    ]
+  },
+  {
+    "Name": "WeatherGetter Frontend",
+    "Description": "This is a weather dashboard web app using Blazor Server, enabling users to view, compare, and manage weather data for multiple cities, using service app WeatherGetter. The app features dynamic forms for city selection, date and time range picking, and city management, all integrated with a REST API backend. For data visualization, I implemented interactive line charts using Chart.js via custom JavaScript interop, supporting both single-city and side-by-side city comparisons. The chart logic handles missing data gracefully by aligning time intervals and displaying gaps or default values as needed. The UI is styled with Bootstrap for a clean, responsive experience. This project demonstrates my skills in full-stack .NET development, advanced Blazor component design, API integration, JavaScript interop, and building user-friendly, data-driven interfaces.",
+    "ImageUrl": "/images/weatherFront.png",
+    "TechStack": ["Blazor Server (C# / .NET)", "ASP.NET Core", "Razor Components", "JavaScript Interop", "REST API Integration", "Chart.js", "Bootstrap"],
+    "Links": [
+      { "Label": "Repository", "Url": "https://github.com/konradp/TODO" }
+    ]
+  }
+]

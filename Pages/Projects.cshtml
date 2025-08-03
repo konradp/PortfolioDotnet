@@ -1,0 +1,88 @@
+﻿@page "{selected?}"
+@model ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<div class="card p-3 mb-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="row">
+        <!-- Left: Project List -->
+        <div class="col-md-4">
+            <div class="list-group">
+                <div class="mb-2 fw-bold">Unity Game Development</div>
+                <a asp-page="/Projects" asp-route-selected="Builders of Greece" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Builders of Greece" ? "active" : "")">Builders of Greece Programming</a>
+                <a asp-page="/Projects" asp-route-selected="Builders of Greece PO" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Builders of Greece PO" ? "active" : "")">Builders of Greece Product Owner</a>
+                <a asp-page="/Projects" asp-route-selected="Gimle" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Gimle" ? "active" : "")">Gimle</a>
+                <a asp-page="/Projects" asp-route-selected="Pirates Keel" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Pirates Keel" ? "active" : "")">Pirate's Keel</a>
+                <a asp-page="/Projects" asp-route-selected="Rally Project" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Rally Project" ? "active" : "")">Rally Project</a>
+                <a asp-page="/Projects" asp-route-selected="TankX" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "TankX" ? "active" : "")">TankX</a>
+                <div class="mb-2 fw-bold mt-4">Prototypes/Other Games</div>
+                <a asp-page="/Projects" asp-route-selected="Kulkens" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Kulkens" ? "active" : "")">Kulkens Proof of Concept</a>
+                <a asp-page="/Projects" asp-route-selected="Digging Game Prototype" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Digging Game Prototype" ? "active" : "")">Digging Game Prototype</a>
+                <a asp-page="/Projects" asp-route-selected="Bad Karts" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "Bad Karts" ? "active" : "")">Bad Karts</a>
+                <div class="mb-2 fw-bold mt-4">.NET Projects</div>
+                <a asp-page="/Projects" asp-route-selected="WeatherGetter Service" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "WeatherGetter Service" ? "active" : "")">WeatherGetter Service</a>
+                <a asp-page="/Projects" asp-route-selected="WeatherGetter Frontend" class="list-group-item list-group-item-action @(Model.SelectedProject.Name == "WeatherGetter Frontend" ? "active" : "")">WeatherGetter Frontend</a>
+                <!-- Add more projects here -->
+            </div>
+        </div>
+
+        <!-- Right: Project Details Card -->
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="row g-0">
+                    <!-- Left Segment: Image & Tech Stack -->
+                    <div class="col-md-5 d-flex flex-column align-items-center justify-content-center p-3 align-self-start">
+                        <img src="@Model.SelectedProject.ImageUrl" class="img-fluid mb-3" alt="Project Image" style="max-height:150px;">
+                        <div>
+                            <h6>Tech Stack:</h6>
+                            <ul class="list-unstyled">
+                                @foreach (var tech in Model.SelectedProject.TechStack)
+                                {
+                                    <li><span class="badge bg-secondary">@tech</span></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Right Segment: Name & Description -->
+                    <div class="col-md-7 p-3">
+                        <h4>@Model.SelectedProject.Name</h4>
+                        <p>@Html.Raw(Model.SelectedProject.Description.Replace("\n", "<br>"))</p>
+                        <div class="mt-3">
+                            @if (Model.SelectedProject.Links != null)
+                            {
+                                foreach (var link in Model.SelectedProject.Links)
+                                {
+                                    <a href="@link.Url" target="_blank" class="btn btn-primary me-2 mb-2">@link.Label</a>
+                                }
+                            }
+                        </div>
+                    </div>
+                    @if (!string.IsNullOrEmpty(Model.SelectedProject.YouTubeUrl))
+                    {
+                    <div class="card mt-3 bg-dark text-light">
+                        <div class="card-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="@Model.SelectedProject.YouTubeUrl"
+                                        title="YouTube video"
+                                        allowfullscreen
+                                        frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.SelectedProject.ExtraImageUrl))
+                    {
+                        <div class="card mt-3 bg-dark text-light">
+                            <div class="card-body text-center">
+                                <img src="@Model.SelectedProject.ExtraImageUrl" class="img-fluid" alt="Extra Image" />
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
